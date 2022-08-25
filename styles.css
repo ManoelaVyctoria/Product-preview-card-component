@@ -1,0 +1,110 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --dark-button: hsl(158, 27%, 31%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font-principal: 'Montserrat';
+    --font-segundaria: 'Fraunces'
+}
+
+body {
+    background-color: var(--Cream);
+    font-size: 14px;
+    /* text-align: center;  */
+    color: hsl(227, 43%, 4%);
+    font-family: var(--font-principal);
+}
+
+.container {
+    width: 100vw;
+    height: 100vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+.information__imagem img {
+    display: block;
+    width: 335px;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+
+.information-text {
+    height: 504px;
+    width: 337px;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    background-color: white;
+    padding: 0px 30px;
+    /* grid-template-columns: 50% 50%; */
+
+}
+
+.information-text__perfume {
+    letter-spacing: 0.2rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.information-text__titulo {
+    font-size: 40px;
+    font-family: var(--font-segundaria);
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.information-text__descrition {
+    color: var(--Dark-grayish-blue);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.information-text__precos {
+    font-family: var(--font-segundaria);
+    font-size: 30px;
+    color: var(--Dark-cyan);
+    margin: 0;
+    padding-right: 28px;
+    padding-bottom: 20px;
+}
+
+.information-text__button {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    padding: 20px 119px;
+    border-radius: 8px;
+    width: 334px;
+    text-decoration: none;
+
+}
+
+.information-text__icon {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: none;
+    display: inline-block;
+}
+
+a.information-text__button:hover {
+    background: var(--dark-button);
+}
+
+.precos {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.information-text__precosegundario {
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
